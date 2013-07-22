@@ -1,3 +1,12 @@
+########################################################
+# Implementation of the Floodlight StaticFlowIp service.
+#
+# @author Luca Prete <luca.prete@garr.it>
+# @author Andrea Biancini <andrea.biancini@garr.it>
+# @author Fabio Farina <fabio.farina@garr.it>
+# @author Simone Visconti<simone.visconti.89@gmail.com>
+######################################################## 
+
 import httplib
 import json
 import ast
