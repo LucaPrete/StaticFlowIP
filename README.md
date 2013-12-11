@@ -47,7 +47,6 @@ The project has been developed and tested on Floodlight v0.90.
 
 The module consists of the following components:
   * it.garr.staticflowip package
-  * it.garr.ccbalancer.web package
 
 Eclipse
 -------
@@ -84,7 +83,7 @@ REST APIs
 
 This project offers the following REST APIs:
 
- * ``http://controller-ip:8080/wm/staticflowip/costs``
+ * ``http://controller-ip:8080/wm/staticflowip/IP/json``
      + it supports POST actions allowing users to set via REST API a bidirectional path between two nodes of the
        network.
 
@@ -93,12 +92,10 @@ REST API tutorial
 
 Below, an example of the REST API used to set paths can be found:
 
- * JSON posted to define path through http://controller-ip:8080/wm/staticflowip/costs. The following JSON is useful
+ * JSON posted to define path through http://controller-ip:8080/wm/staticflowip/IP/json. The following JSON is useful
    to set a path between 10.0.0.1 and 10.0.0.2.
    ```
-   [
-       {'IPSrc':'10.0.0.1','IPDst':'10.0.0.2'}
-   ]
+       {"IPSrc":"10.0.0.1","IPDst":"10.0.0.2"}
    ```
 
 
